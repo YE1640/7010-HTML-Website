@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: #def2c8;
+}
+.bannerbackground{
+    height: 25%;
+    width: 100%;
+    background-color: #a9b2ac;
+    position: absolute;
+    z-index: -1;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 135px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+   
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #def2c8;
+    text-transform: capitalize;
+    font: bold;
+    font-size: 25px;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #bcd0c7;
+    position: absolute;
+    left:0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 70%;
+    position:absolute;
+    /*padding-top: 5%;*/
+    /*margin-top: 55px;*/
+    margin-left: 35px;
+    /*transform: translateY(-15%);*/
+    text-align: left;
+    color: darkolivegreen;
+}
+.content h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.content p{
+    margin: 30px auto;
+    font-weight: 100;
+    line-height: 25px; 
+    font-size: 20px;
+}
+.content image{
+    width: 75%;
+}
+.content button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid darkolivegreen;
+    background: transparent;
+    color: darkolivegreen;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: darkolivegreen;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+    background-color: #c5dac1;
+}
+
+/*ecosystem page*/
+.subheader{
+    width: 70%;
+    position:left;
+    margin-left: 35px;
+    text-align: left;
+    color: darkolivegreen;
+}
+.subheader h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.subheader h2{
+    margin-top: 20px;
+    background-color: #c5dac1;
+    color:#898980;
+    padding: 5px;
+}
+.subheader h4{
+    margin-top: 20px;
+    padding: 5px;
+}
+.subheader p{
+    margin: 30px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 20px;
+}
+.subheader button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid darkolivegreen;
+    background: transparent;
+    color: darkolivegreen;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+img{
+    height:auto;
+    width: 75%;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    position: absolute;
+    top: 45%;
+    right: 25px;
+    background-color: #bcd0c7;
+    width: 15%;
+    margin: 15px;
+    padding: 15px;
+}
+.container h3{
+    font-weight: bold;
+    color: #898980;
+    margin: 5px;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 30px;
+}
+.container a{
+    margin: 5px;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+img{
+    max-width: 75%;
+    height: auto;
+}
+.Statistic {
+    margin: 15px;
+    padding: 15px;
+    width: 70%;
+    color: darkolivegreen;
+}
+.Statistic h2{
+    background-color: #c5dac1;
+    color:#898980;
+    padding: 5px;
+}
+.Statistic p{
+    margin: 30px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 20px;
+}
+video {
+    margin: 15px;
+    padding: 15px;
+    width: 70%;
+    height:auto
+}
